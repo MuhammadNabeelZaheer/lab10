@@ -26,7 +26,12 @@ pipeline {
               bat 'npm install'
             }
           }
-        
+        stage('Docker Compose Up') {
+            steps {
+               
+                    bat "docker compose up"
+                
+            }
         }
     }
 }
